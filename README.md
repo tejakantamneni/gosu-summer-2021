@@ -1,1 +1,1 @@
-# gosu-summer-2021
+# GOSU programs as part of summer 2021 
