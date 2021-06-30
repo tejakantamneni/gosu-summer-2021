@@ -16,7 +16,7 @@ function binarySearch(nums: int[], search: int): int {
 } 
   
 var arr = new int[]{ 2, 3, 4, 10, 40 }; 
-var x = 4; 
+var x = 28; 
 var result = binarySearch(arr, x); 
 
 print(result)
