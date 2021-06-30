@@ -1,6 +1,8 @@
 
-var s = new Stack()
+var s = new Stack("fist")
+
 s.push("John")
+
 s.push("Paul")
 s.push("Jane")
 print(s)

@@ -5,7 +5,7 @@ class Stack {
   var _top: Node
   
   construct(){
-    
+    _top = null
   }
   
   construct(v: String){
