@@ -35,9 +35,16 @@ class Queue {
     if(_first == null){
       return null
     }else{
+      //Store the current first into a temp
       var f = _first
+      
+      //point first to next element in the list (this could be null)
       _first = _first.Next
+      
+      //reduce the size for tracking
       _size--
+      
+      //return the value
       return f.Value
     }
   }
