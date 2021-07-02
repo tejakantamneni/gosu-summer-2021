@@ -1,8 +1,12 @@
 package class_2021.oops
 
+uses class_2021.enums.Courses
+uses class_2021.enums.CoursesOther
+
 class Student {
   
-  public static var COURSE_NAME: String = "GOSU"
+  public static var COURSE_NAME: Courses = Courses.GOSU
+  
   public static var numberOfStudents:int = 0
   
   //state or data

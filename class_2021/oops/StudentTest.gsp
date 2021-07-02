@@ -1,4 +1,10 @@
 
+
+
+var m = new Mammal('a', 4, true)
+m.something()
+
+
 var i:Student
 
 i = new(){:Name = "Teja"}
