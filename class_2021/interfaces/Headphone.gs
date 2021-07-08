@@ -6,6 +6,7 @@ interface Headphone {
   
   property get Name(): String
   
+
   function increaseVolume()
   
   function answerCall() {

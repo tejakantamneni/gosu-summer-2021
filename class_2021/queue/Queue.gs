@@ -13,6 +13,7 @@ class Queue {
     _first = n
   }
   
+  @Deprecated("This method has been deprecated in lieu of something else")
   function enqueue(v: String){
     var n = new Node(v)
     
