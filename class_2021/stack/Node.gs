@@ -1,11 +1,11 @@
 package class_2021.stack
 
-class Node {
+class Node<T>{
 
-  var _value: String as Value
-  var _next: Node as Next
+  var _value: T as Value
+  var _next: Node<T> as Next
   
-  construct(v: String){
+  construct(v: T){
     this._value = v
   }
   

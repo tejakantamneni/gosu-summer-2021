@@ -1,19 +1,19 @@
 package class_2021.stack
 
-class Stack {
+class Stack<T> {
   
-  var _top: Node
+  var _top: Node<T>
   
   construct(){
     _top = null
   }
   
-  construct(v: String){
-    _top = new Node(v)
+  construct(v: T){
+    _top = new Node<T>(v)
   }
   
-  function push(v: String){
-    var n: Node = new Node(v)
+  function push(v: T){
+    var n: Node<T> = new Node<T>(v)
     if (_top == null){
       _top = n
     } else {
@@ -22,7 +22,7 @@ class Stack {
     }
   }
   
-  function pop(): String {
+  function pop(): T {
     if (_top == null ){
       return null
     } else {

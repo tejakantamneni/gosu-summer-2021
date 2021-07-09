@@ -1,10 +1,10 @@
 
-var s = new Stack("fist")
+var s = new Stack<Integer>(1)
 
-s.push("John")
+s.push(2)
 
-s.push("Paul")
-s.push("Jane")
+s.push(3)
+s.push(4)
 print(s)
 
 print(s.pop())
@@ -16,5 +16,7 @@ print(s)
 print(s.pop())
 print(s)
 
-print(s.pop())
+var k = s.pop() 
+
+print(k)
 print(s)
