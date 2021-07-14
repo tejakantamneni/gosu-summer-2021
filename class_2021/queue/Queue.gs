@@ -1,27 +1,27 @@
 package class_2021.queue
 
-class Queue {
-  var _first: Node as First
+class Queue<E> {
+  var _first: Node<E> as First
   var _size: int = 0
   
   construct(){
     
   }
   
-  construct(v: String) {
-    var n = new Node(v)
+  construct(v: E) {
+    var n = new Node<E>(v)
     _first = n
   }
   
-  @Deprecated("This method has been deprecated in lieu of something else")
-  function enqueue(v: String){
+  //@Deprecated("This method has been deprecated in lieu of something else")
+  function enqueue(v: E){
     var n = new Node(v)
     
     //Empty queue
     if(_first == null){
       _first = n
     }else{
-      var t: Node = _first
+      var t: Node<E> = _first
       //Move to the last Node
       while(t.Next != null){
         t = t.Next
@@ -32,7 +32,7 @@ class Queue {
     _size++
   }
   
-  function dequeue(): String{
+  function dequeue(): E{
     if(_first == null){
       return null
     }else{

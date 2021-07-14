@@ -1,10 +1,10 @@
 package class_2021.queue
 
-class Node {
-  var _value: String as Value
-  var _next: Node as Next
+class Node<E> {
+  var _value: E as Value
+  var _next: Node<E> as Next
   
-  construct(v: String){
+  construct(v: E){
     this.Value = v
   }
   

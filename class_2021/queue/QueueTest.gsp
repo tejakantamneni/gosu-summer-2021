@@ -1,19 +1,19 @@
 
-var q = new Queue()
+var q = new Queue<Integer>()
 
 print(q)
 
 print("Size: "+ q.Size)
 
-q.enqueue("first")
+q.enqueue(1)
 
 print(q)
 
-q.enqueue("second")
+q.enqueue(2)
 
 print(q)
 
-q.enqueue("third")
+q.enqueue(3)
 
 print(q)
 
