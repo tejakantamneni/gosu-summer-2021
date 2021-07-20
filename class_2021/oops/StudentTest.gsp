@@ -1,8 +1,17 @@
 
 
+try{
+var s1 = new Student()
+s1.changeNameToUpperCase()
+}catch(e: NameMissingException){
+  print('looks like student name is missing')
+}catch(e: Exception){
+  print("something else happened")
+}
 
-var m = new Mammal('a', 4, true)
-m.something()
+
+//var m = new Mammal('a', 4, true)
+//m.something()
 
 
 var i:Student
@@ -34,7 +43,6 @@ print(s)
 print(c)
 
 print(s.COURSE_NAME)
-s.COURSE_NAME = "Security"
 
 print(s.COURSE_NAME)
 print(c.COURSE_NAME)

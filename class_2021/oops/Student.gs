@@ -43,6 +43,9 @@ class Student {
   
   //methods or behavior
   function changeNameToUpperCase(){
+    if(this.Name == null){
+      throw new NameMissingException()
+    }
     //if(this._name == null) return
     this._name = this._name?.toUpperCase()
   }
