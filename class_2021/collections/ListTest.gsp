@@ -12,6 +12,8 @@ for(i in l index j){
 }
 
 
+
+
 var list2 = new ArrayList<Integer>(20)
 //list2.fill(3)
 //print(list2.get(10))

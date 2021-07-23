@@ -1,4 +1,9 @@
 
+//print('A' as int)
 
-var k = "Teja".myUpperCase()
-print(k)
+//a- 63
+
+
+print("ABCD".map( \x -> { var t = x as int; t += 1; return ((char)t)}) )
+
+//print(k.map( \x -> x ))

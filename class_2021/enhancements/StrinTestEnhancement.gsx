@@ -14,4 +14,12 @@ enhancement StrinTestEnhancement : String {
     return this.length
   }
   
+  function map( f(x:Character): Character ): String {
+    var result = ''
+    for (c in this.toCharArray()){
+      result += f(c)
+    }
+    return result
+  }
+  
 }
