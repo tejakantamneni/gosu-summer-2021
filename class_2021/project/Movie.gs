@@ -1,6 +1,6 @@
 package class_2021.project
 
-class Movie {
+class Movie implements java.io.Serializable{
   
   var _name: String as Name
   var _date: String as ReleaseDate

@@ -10,7 +10,8 @@ class Menu {
     print("3. Show All")
     print("4. Edit")
     print("5. Delete")
-    print("6. Exit")
+    print("6. Save to disk")
+    print("7. Exit")
   }
 
   function readMovieDetails(): Movie {

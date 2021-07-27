@@ -46,8 +46,13 @@ do {
         print("No mathcing movie foound")
       }
       break
+    case 6:
+      print("Saving...")
+      movieService.writeToFile()
+      print("Saved successfull")
+      break
     default:
       print("Unknown...")
   }
   
-}while(choice > 0 && choice <= 5)
+}while(choice > 0 && choice <= 6)
