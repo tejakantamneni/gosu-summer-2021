@@ -24,4 +24,19 @@ class Menu {
     return new Movie(name, dt, r)
   }
 
+  function readEditMovieDetails(): Movie {
+    var scanner = new Scanner(System.in)
+    print("Please enter the release date of the movie")
+    var dt = scanner.nextLine()
+    print("Please enter the ratings of the movie")
+    var r = scanner.nextFloat()
+    return new Movie(null, dt, r)
+  }
+
+  function readSearch(): String {
+    var scanner = new Scanner(System.in)
+    print("Please enter the name of the movie")
+    return scanner.nextLine()    
+  }
+
 }

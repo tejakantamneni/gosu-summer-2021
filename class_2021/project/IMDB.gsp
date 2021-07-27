@@ -21,10 +21,30 @@ do {
       }
       break
     case 2:
-      print("Search")
+      print("Searching...")
+      var criteria = menu.readSearch()
+      var result = movieService.search(criteria)
+      print("Found movie: ${result}")
       break
     case 3:
       movieService.showAll()
+      break
+    case 4:
+      var criteria = menu.readSearch()
+      var matched = movieService.search(criteria)
+      print("Found matching movie: ${matched}")
+      var editMovie = menu.readEditMovieDetails()
+      editMovie.Name =  criteria
+      movieService.edit(matched, editMovie)
+      break
+    case 5:
+      var criteria = menu.readSearch()
+      var result = movieService.delete(criteria)
+      if(result){
+        print("Removed successfully")
+      }else{
+        print("No mathcing movie foound")
+      }
       break
     default:
       print("Unknown...")

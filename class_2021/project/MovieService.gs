@@ -16,6 +16,21 @@ class MovieService {
     this._movies.add(m)
   }
   
+  function search(s: String): Movie {
+    return _movies.firstWhere(\x -> x.Name == s)
+  }
+  
+  function edit(oldMovie: Movie, m: Movie) {
+    var idx = _movies.indexOf(oldMovie)
+    _movies.set(idx, m)
+  }
+  
+  function delete(s: String): boolean{
+    //_movies.retainWhere(\x ->x.Name != s)
+    var toDelete = search(s)
+    return _movies.remove(toDelete)
+  }
+  
   function showAll(){
     print("------MOVIES IN THE DATABASE------------")
     
